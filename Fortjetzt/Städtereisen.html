@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
+    <header class="city">
       <nav>
         <img src="images/Logo.jpg" alt="Travel Agency Logo">
         <ul>
           <li><a href="index.html">Home</a></li>
          
             
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Destinations</a>
-                <div class="dropdown-content">
-                    <a href="Städtereisen.html">City Tours</a>
-                    <a href="#">Regional Tours</a>
-                    <a href="#">Event Travel</a>
-                    <a href="#">Winter Travel</a>
-                </div>
-            </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Destinations</a>
+            <div class="dropdown-content">
+                <a href="Städtereisen.html">City Tours</a>
+                <a href="RegionalTours.html">Regional Tours</a>
+                <a href="EventTravel.html">Event Travel</a>
+                <a href="WinterTravel.html">Winter Travel</a>
+            </div>
+        </li>
 
 
           </li>
@@ -43,7 +43,30 @@
       </div>
     </header>
     <main>
-    
+      <section class="city-tour">
+        <div class="containercity">
+          <h2>City Tour</h2>
+          <p>Wir bieten Ihnen eine breite Auswahl an aufregenden Städtereisen in ganz Europa und darüber hinaus. Entdecken Sie die Schönheit und Kultur von Städten wie Paris, Rom, Barcelona, Amsterdam und vielen mehr. Mit unseren sorgfältig geplanten Stadttouren werden Sie die wichtigsten Sehenswürdigkeiten besuchen und die versteckten Ecken der Stadt erkunden.
+
+            Unsere Stadtreisen sind für jeden Geschmack und jedes Budget geeignet. Wir bieten eine Vielzahl von Unterkunftsoptionen, von budgetfreundlichen Hostels bis hin zu luxuriösen Hotels. Wählen Sie die Reisedauer, die am besten zu Ihrem Zeitplan passt, und lassen Sie uns den Rest erledigen. Unser erfahrenes Reiseteam kümmert sich um alle Details, damit Sie sich zurücklehnen und die Reise genießen können.
+            
+            Ob Sie Kunst und Geschichte lieben, das Nachtleben einer Stadt genießen möchten oder einfach nur die lokale Küche probieren möchten, unsere Stadttouren bieten für jeden etwas. Wir stellen sicher, dass Sie eine unvergessliche Erfahrung haben, indem wir Ihnen ein perfekt geplantes Reisepaket bieten, das auf Ihre Bedürfnisse zugeschnitten ist.
+            
+            Buchen Sie jetzt eine unserer Städtereisen und erleben Sie eine unvergessliche Reise voller Erlebnisse, Abenteuer und Entdeckungen. Unser Team steht Ihnen jederzeit zur Verfügung, um Ihnen bei der Planung Ihrer perfekten Stadttour zu helfen. Wir freuen uns darauf, Sie auf Ihrer Reise begleiten zu dürfen!</p>
+        </div>
+      </section>
+      <section id="contact-us" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </section>
     </main>
     <footer>
       <p>&copy; 2023 Travel Agency. All rights reserved.</p>

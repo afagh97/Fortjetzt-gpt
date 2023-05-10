@@ -75,13 +75,14 @@
   }
   
   .hero h1 {
-    font-size: 3rem;
+    font-size: 8rem;
     margin-bottom: 20px;
   }
   
   .hero p {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin-bottom: 40px;
+    font-weight: bold;
   }
   
   
@@ -299,7 +300,7 @@
   background-image: url("images/cityheader.png");
     background-size: cover;
     background-position: center;
-    color: #000000;
+    color: #292a2c;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,7 +327,7 @@
   background-image: url("images/eventheader.png");
     background-size: cover;
     background-position: center;
-    color: #180e05;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -492,4 +493,9 @@ footer {
 
 p{
   font-family: 'Times New Roman', Times, serif;
+}
+
+
+.citytitle2{
+  color: #ffffff;
 }

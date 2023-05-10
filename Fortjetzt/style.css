@@ -28,6 +28,7 @@
   }
 
 
+  
    nav { 
     text-align: right;
     display: flex;
@@ -38,24 +39,24 @@
     top: 0;
     width: 100%; 
     padding: 20px 7%; 
-    
-  }
-
-
-
-  nav img{ 
+    font-size:larger;
+  } 
+  nav img {
     height: 60px;
-
-
   }
+
+
+
   
   nav ul {
     list-style: none;
     display: flex;
+  
   }
   
   nav ul li {
-    margin-right: 20px;
+    margin-right: 35px;
+    
   }
   
   nav ul li a {
@@ -115,6 +116,7 @@
   .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     
   }
   
@@ -125,6 +127,8 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     border-radius: 5% ;
     text-align: center;
+    padding-bottom: 20px;
+   
   }
   
   .card img {
@@ -160,6 +164,11 @@
   }
   
   .about-us p {
+    text-align: justify;
+    word-spacing: 0.2em;
+    line-height: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
     font-size: 1.2rem;
     margin-bottom: 40px;
   }
@@ -177,6 +186,11 @@
   }
   
   .neue-Büro p {
+    text-align: justify;
+    word-spacing: 0.2em;
+    line-height: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
     font-size: 1.2rem;
     margin-bottom: 40px;
   }
@@ -345,6 +359,8 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  
+  
 }
 .winter {
   background-image: url("images/winterheader.png");
@@ -412,32 +428,47 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .footer-item {
   flex-basis: 25%;
   margin-bottom: 40px;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .footer-item h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .footer-item p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  margin: 0 auto;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
 .footer-item ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .footer-item li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 10px;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .footer-item a {
@@ -456,6 +487,7 @@ footer {
 }
 
 .footer-bottom p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;
   margin: 0;
 }
@@ -470,24 +502,31 @@ footer {
 
 .text {
   flex-basis: 50%;
+  
+  word-spacing: 0.2em;
+  line-height: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .text p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .image {
   flex-basis: 40%;
 }
 
-.image img {
+.image img { 
   width: 100%;
 }
 
@@ -499,3 +538,24 @@ p{
 .citytitle2{
   color: #ffffff;
 }
+
+.Büro-btn{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    width: 500px; 
+    height: 50px; 
+    font-size: 16px; 
+}
+  
+  .Büro-btn:hover {
+    background-color: #0062cc;
+  } 
+
+  .neues-Büro{
+    margin-bottom: 20px;
+  }

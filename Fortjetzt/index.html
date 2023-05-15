@@ -6,30 +6,44 @@
     <title>Fortjetzt</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   </head>
   <body>
     <header>
-      
-      <nav>
-        <img src="images/Logo.png" alt="Travel Agency Logo">
-        <ul>
-          <li><a href="index.html">Start</a></li>
-         
-    
-          <li class="dropdown">
-            <a href="#" class="dropbtn">Angebot</a>
-            <div class="dropdown-content">
-                <a href="Städtereisen.html">Städtereisen</a>
-                <a href="RegionalTours.html">Regionaltouren</a>
-                <a href="EventTravel.html">Eventreisen</a>
-                <a href="WinterTravel.html">Winterreisen</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <a class="navbar-brand" href="#">
+        <img src="images/Logo.png" alt="Travel Agency Logo" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Start</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Angebote
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="Städtereisen.html">Städtereisen</a>
+              <a class="dropdown-item" href="RegionalTours.html">Regionaltouren</a>
+              <a class="dropdown-item" href="EventTravel.html">Eventreisen</a>
+              <a class="dropdown-item" href="WinterTravel.html">Winterreisen</a>
             </div>
-        
-          <li><a href="#about-us">Über uns</a></li>
-          <li><a href="#contact-us">Kontakt</a></li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-us">Kontakt</a>
+          </li>
         </ul>
-        
-      </nav>
+      </div>
+    </nav>
       <div class="hero">
         <h1 class="title">Fortjetzt</h1>
         <p>Reisen zu fesselnden Zielen</p>
@@ -67,7 +81,7 @@
         </div>
       </section>
       <section class="social">
-        <h2>Folgen Sie uns</h2>
+        <h2>Folgen Sie uns</h2><p> Auf unsere Social-Media-Accounts erfahren Sie als erster unsere neuste Angebote und Rabatt-Aktionen!</p>
         <div class="social-links">
           <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
           <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -75,20 +89,70 @@
           <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
         </div>
       </section>
+      <section class="trip-planner">
+        <h2>Reise-Planner</h2>
+        <form>
+          <div>
+            <label for="destination">Reiseziel:</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+          </div>
+          <div>
+            <label for="startDate">Startdatum:</label>
+            <input type="date" id="startDate" name="startDate" required>
+          </div>
+          <div>
+            <label for="endDate">Enddatum:</label>
+            <input type="date" id="endDate" name="endDate" required>
+          </div>
+          <div>
+            <label for="budget">Budget:</label>
+            <input type="number" id="budget" name="budget" placeholder="Budget eingeben" required>
+          </div>
+          <div>
+            <label for="activities">Aktivitäten</label>
+            <select id="activities" name="activities" required>
+            <option value="">Wähle eine Aktivität aus</option>
+            <option value="city-tour">Stadtbesichtigung</option>
+            <option value="hiking">Wandern</option>
+            <option value="beach-relaxation">Strandentspannung</option>
+            <option value="cultural-exploration">Kulturelle Erkundung</option>
+            <option value="adventure-sports">Abenteuersport</option>
+            </select>
+          </div>
+          <button type="submit">Reise plannen</button>
+        </form>
+      </section>
+      
+      <section class="image-gallery">
+        
+        <div class="image-container">
+          <img src="Images/paris.png" alt="Eifelturm in Frühling">
+          <img src="Images/tanning.png" alt="Leute sonnen am Strand">
+          <img src="Images/temple.png" alt="Ein Temple in Japan">
+          <img src="Images/surfing.png" alt="Surfen in Australien">
+          
+        </div>
+      </section>
+      
+      
+
+
+
       <section id= "neue-Büro" class="neue-Büro">
         <h2>Unser neues Büro</h2>
-        <p>Unser modernes und großzügiges Büro befindet sich <strong> Herzen von Halle an der Saale, Mühlberg. 45</strong> Auf einer Fläche von 220 Quadratmetern bieten wir Ihnen einladende und komfortable Räumlichkeiten, in denen Sie sich sofort wie zu Hause fühlen werden.  Unser Büro ist auch barrierefrei und rollstuhlgerecht eingerichtet, um sicherzustellen, dass alle unsere Kunden einen reibungslosen und angenehmen Aufenthalt bei uns haben. Wir laden Sie herzlich ein, uns in unserem modernen und einladenden Büro in der Mühlberg 45 zu besuchen und uns die Möglichkeit zu geben, Ihnen bei der Planung Ihrer nächsten Traumreise zu helfen. Wir freuen uns darauf, Sie kennenzulernen!</p>
+        <p>Unser modernes und großzügiges Büro befindet sich <strong> Herzen von Halle, Torstraße 7a</strong> Auf einer Fläche von 220 Quadratmetern bieten wir Ihnen einladende und komfortable Räumlichkeiten.  Unser Büro ist auch barrierefrei und rollstuhlgerecht eingerichtet, um sicherzustellen, dass alle unsere Kunden einen reibungslosen Aufenthalt bei uns haben. Wir laden Sie herzlich ein, uns in unserem modernen Büro in der Torstraße 7a zu besuchen und uns die Möglichkeit zu geben, Ihnen bei der Planung Ihrer nächsten Traumreise zu helfen!</p>
         <img class="neues-Büro" src="Images/office1.png" width="35%" alt="">
         <img class="neues-Büro" src="Images/office2.png" width="35%" alt=""> 
       <div>
-      <a href="#" class="Büro-btn">mehr erfahren</a>
+        
+
     </div>
       </section>
 
       <section id= "about-us" class="about-us">
         <h2>Über uns</h2>
-        <p>Herzlich Willkommen bei Fortjetzt – Reisen zu fesselnden Zielen GmbH! Wir sind ein Reisebüro mit Sitz in Halle an der Saale und freuen uns darauf, Ihnen bei der Planung Ihrer nächsten Traumreise behilflich zu sein.
-          Unser Unternehmen wird von Janine Bley geleitet, die als Geschäftsführerin für die erfolgreiche Entwicklung und Führung des Unternehmens verantwortlich ist. Unser Team besteht aus insgesamt 4 Mitarbeitern, die alle bestens geschult und motiviert sind, um Ihnen ein unvergessliches Reiseerlebnis zu ermöglichen. Wir freuen uns darauf, Sie kennenzulernen und Ihnen bei der Planung Ihrer nächsten Reise zu helfen!</p>
+        <p>Herzlich Willkommen bei Fortjetzt – Reisen zu fesselnden Zielen GmbH! Wir freuen uns darauf, Ihnen bei der Planung Ihrer nächsten Traumreise behilflich zu sein.
+          Unser Unternehmen wird von <strong>Janine Bley </strong>  geleitet, die als Geschäftsführerin für die erfolgreiche Entwicklung und Führung des Unternehmens verantwortlich ist. Unser Team besteht aus 4 Mitarbeitern, die alle bestens geschult und motiviert sind, um Ihnen ein unvergessliches Reiseerlebnis zu ermöglichen. Wir freuen uns darauf, Sie kennenzulernen und Ihnen bei der Planung Ihrer nächsten Reise zu helfen!</p>
         <img src="Images/About-us1.png" width="60%" alt=""> 
       <div>
       
@@ -113,7 +177,11 @@
       <div class="footer-content">
         <div class="footer-item">
           <h3>Adresse</h3>
-          <p>Mühlberg. 45<br>06108 Halle an der Saale</p>
+          <p>Reisebüro Fortjetzt –<br>
+            Reisen zu fesselnden Preisen GmbH<br>
+            Torstraße 7a<br>
+            06110 Halle (Saale)<br>
+            Inhaberin: Janine Bley</p>
         </div>
         <div class="footer-item">
           <h3>Impressum</h3>
@@ -141,6 +209,15 @@
       </div>
     </footer>
     
-  
+    <button onclick="scrollToTop()" id="back-to-top-btn">
+      <span class="arrow-up"></span>
+      <span class="button-text">Zurück nach oben</span>
+    </button>
+    
+    <script src="button.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   </body>
 </html>
